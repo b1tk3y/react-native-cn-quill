@@ -76,7 +76,7 @@ export default class QuillEditor extends React.Component<
     super(props);
     this._webview = React.createRef();
     this.state = {
-      webviewContent: this.getInitalHtml(),
+      webviewContent: this.getInitialHtml(),
     };
 
     this._handlers = [];
@@ -113,7 +113,7 @@ export default class QuillEditor extends React.Component<
     }
   }
 
-  private getInitalHtml = (): string => {
+  private getInitialHtml = (): string => {
     const {
       initialHtml = '',
       import3rdParties = 'local',
